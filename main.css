@@ -1,0 +1,221 @@
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(215, 8%, 29%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Overpass:wght@400;700&family=Roboto:wght@100;300;400;500;900&display=swap');
+
+/* ## Typography */
+
+/* ### Body Copy */
+
+/* - Font size (paragraph): 15px */
+
+/* ### Font */
+/* 
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700 */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Overpass', sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--VeryDarkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide{
+  display: none;
+}
+
+.card-container{
+  max-width: 375px;
+  min-width: 320px;
+  width: 350px;
+  margin: 0 auto;
+  height: 370px;
+  background-color: var(--DarkBlue);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.card-header{
+  height: 80px;
+  width: 330px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+picture{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: var(--MediumGrey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+picture img{
+  margin-left: 2px;
+}
+
+.card-text{
+  width: 100%;
+  margin: 10px auto;
+}
+
+.card-text h2{
+  color: var(--White);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.card-text p{
+  letter-spacing: 0.8px;
+  font-size: 15px;
+  color: var(--LightGrey);
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.card-numbers{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--LightGrey);
+  margin: 10px auto;
+  
+}
+
+.numberChoice{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--MediumGrey);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.numberChoice:hover{
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.numberChoice:active{
+  transform: scale(0.9);
+}
+
+.card-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card-button button{
+  background-color: var(--Orange);
+  border: none;
+  width: 330px;
+  height: 40px;
+  border-radius: 25px;
+  color: var(--White);
+  letter-spacing: 2.5px;
+  cursor: pointer;
+}
+
+  .card-button button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+  }
+
+
+
+.card-button button:active{
+  transform: scale(0.9);
+}
+
+.modal-container{
+  max-width: 375px;
+  min-width: 320px;
+  width: 350px;
+  margin: 0 auto;
+  height: 390px;
+  background-color: var(--DarkBlue);
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 5px;
+}
+
+.modal-image{
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-validate{
+  color: var(--Orange);
+  background-color: var(--MediumGrey);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.modal-thanks{
+  height: 150px;
+}
+
+.modal-thanks h2{
+  color: var(--White);
+  margin-bottom: 5px;
+}
+
+.modal-thanks p{
+  color: var(--LightGrey);
+  line-height: 1.5rem;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* medias */
+
+@media (min-width: 1439px)  {
+  .card-container{
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+  }
+
+  .card-button button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+  }
+
+  .card-button button:active{
+    transform: scale(0.9);
+  }
+}
