@@ -8,7 +8,7 @@
   <title>Front End Mentor Proyect</title>
 </head>
 <body>
-  <section class="card-container hide">
+  <section class="card-container">
     <section class="card-header">
       <picture>
         <img src="./assets/icon-star.svg" alt="icono de estrella">
@@ -19,26 +19,27 @@
       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
     </section>
     <section class="card-numbers">
-      <div class="numberChoice">1</div>
-      <div class="numberChoice">2</div>
-      <div class="numberChoice">3</div>
-      <div class="numberChoice">4</div>
-      <div class="numberChoice">5</div>
+      <button class="numberChoice">1</button>
+      <button class="numberChoice">2</button>
+      <button class="numberChoice">3</button>
+      <button class="numberChoice">4</button>
+      <button class="numberChoice">5</button>
+
     </section>
     <section class="card-button">
-      <button>SUBMIT</button>
+      <button id="submit-button">SUBMIT</button>
     </section>
   </section>
 
   <!-- modal -->
-  <div class="modal-container">
+  <section class="modal-container hide">
     <section class="modal-image">
       <picture>
         <img src="./assets/illustration-thank-you.svg" alt="imagen de finalizacion">
       </picture>
     </section>
     <section class="modal-validate">
-      <p>You selected 4 out of 5</p>
+      <p id="response"></p>
     </section>
     <section class="modal-thanks">
       <h2>Thank you!</h2>
@@ -46,7 +47,7 @@
         If you ever need more support, don't hesitate to get in touch!
       </p>
     </section>
-  </div>
-
+  </section>
+<script src="./main.js"></script>
 </body>
 </html>
